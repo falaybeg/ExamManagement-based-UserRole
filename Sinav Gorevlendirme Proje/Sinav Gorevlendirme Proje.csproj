@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6B2267B0-1C6D-400B-B85B-67832045586F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sinav_Gorevlendirme_Proje</RootNamespace>
+    <AssemblyName>Sinav Gorevlendirme Proje</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FlatUI">
+      <HintPath>D:\DESKTOP Document\PROGRAMLAMA Deneyimler\C# Themes\Flat UI\FlatUI-master\FlatUI-master\bin\Debug\FlatUI.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BILGI Ekranlari\Hesap_Ayarlari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BILGI Ekranlari\Hesap_Ayarlari.Designer.cs">
+      <DependentUpon>Hesap_Ayarlari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Ekran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Ekran.Designer.cs">
+      <DependentUpon>Admin_Ekran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Ekran\Bina_Okul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Ekran\Bina_Okul.Designer.cs">
+      <DependentUpon>Bina_Okul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GOREVLI Modulleri\Gorevli_Ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GOREVLI Modulleri\Gorevli_Ekle.Designer.cs">
+      <DependentUpon>Gorevli_Ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Ekran\Gorevli_Onay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Ekran\Gorevli_Onay.Designer.cs">
+      <DependentUpon>Gorevli_Onay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BILGI Ekranlari\Kimlik_Karti_Bilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BILGI Ekranlari\Kimlik_Karti_Bilgileri.Designer.cs">
+      <DependentUpon>Kimlik_Karti_Bilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KisaYollar.cs" />
+    <Compile Include="Admin Ekran\kullanici_Ekran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Ekran\kullanici_Ekran.Designer.cs">
+      <DependentUpon>kullanici_Ekran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Ekran\Kullanici_Islemler_Ekrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Ekran\Kullanici_Islemler_Ekrani.Designer.cs">
+      <DependentUpon>Kullanici_Islemler_Ekrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN modulu\Login_Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN modulu\Login_Giris.Designer.cs">
+      <DependentUpon>Login_Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GOREVLI Modulleri\onay_ekrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GOREVLI Modulleri\onay_ekrani.Designer.cs">
+      <DependentUpon>onay_ekrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Admin Ekran\Sehirler_ekran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Ekran\Sehirler_ekran.Designer.cs">
+      <DependentUpon>Sehirler_ekran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BILGI Ekranlari\Sehir_Guncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BILGI Ekranlari\Sehir_Guncelle.Designer.cs">
+      <DependentUpon>Sehir_Guncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sinavda_Sorumlular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sinavda_Sorumlular.Designer.cs">
+      <DependentUpon>Sinavda_Sorumlular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SinavGorevlendirme.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SinavGorevlendirme.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SinavGorevlendirmeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SinavGorevlendirmeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SINAV Formlari\Sinav_Detay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SINAV Formlari\Sinav_Detay.Designer.cs">
+      <DependentUpon>Sinav_Detay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Ekran\Sinav_Islemler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Ekran\Sinav_Islemler.Designer.cs">
+      <DependentUpon>Sinav_Islemler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SINAV Formlari\Yeni_Sinav_Ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SINAV Formlari\Yeni_Sinav_Ekle.Designer.cs">
+      <DependentUpon>Yeni_Sinav_Ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BILGI Ekranlari\Yonetici_Secimi_Ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BILGI Ekranlari\Yonetici_Secimi_Ekle.Designer.cs">
+      <DependentUpon>Yonetici_Secimi_Ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BILGI Ekranlari\Yeni_Sehir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BILGI Ekranlari\Yeni_Sehir.Designer.cs">
+      <DependentUpon>Yeni_Sehir.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BILGI Ekranlari\Hesap_Ayarlari.resx">
+      <DependentUpon>Hesap_Ayarlari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Ekran.resx">
+      <DependentUpon>Admin_Ekran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Ekran\Bina_Okul.resx">
+      <DependentUpon>Bina_Okul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GOREVLI Modulleri\Gorevli_Ekle.resx">
+      <DependentUpon>Gorevli_Ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Ekran\Gorevli_Onay.resx">
+      <DependentUpon>Gorevli_Onay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Ekran\kullanici_Ekran.resx">
+      <DependentUpon>kullanici_Ekran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BILGI Ekranlari\Kimlik_Karti_Bilgileri.resx">
+      <DependentUpon>Kimlik_Karti_Bilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Ekran\Kullanici_Islemler_Ekrani.resx">
+      <DependentUpon>Kullanici_Islemler_Ekrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN modulu\Login_Giris.resx">
+      <DependentUpon>Login_Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GOREVLI Modulleri\onay_ekrani.resx">
+      <DependentUpon>onay_ekrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin Ekran\Sehirler_ekran.resx">
+      <DependentUpon>Sehirler_ekran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BILGI Ekranlari\Sehir_Guncelle.resx">
+      <DependentUpon>Sehir_Guncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SINAV Formlari\Sinav_Detay.resx">
+      <DependentUpon>Sinav_Detay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Ekran\Sinav_Islemler.resx">
+      <DependentUpon>Sinav_Islemler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sinavda_Sorumlular.resx">
+      <DependentUpon>Sinavda_Sorumlular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SINAV Formlari\Yeni_Sinav_Ekle.resx">
+      <DependentUpon>Yeni_Sinav_Ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BILGI Ekranlari\Yonetici_Secimi_Ekle.resx">
+      <DependentUpon>Yonetici_Secimi_Ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BILGI Ekranlari\Yeni_Sehir.resx">
+      <DependentUpon>Yeni_Sehir.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SinavGorevlendirme.xsc">
+      <DependentUpon>SinavGorevlendirme.xsd</DependentUpon>
+    </None>
+    <None Include="SinavGorevlendirme.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SinavGorevlendirme.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SinavGorevlendirme.xss">
+      <DependentUpon>SinavGorevlendirme.xsd</DependentUpon>
+    </None>
+    <None Include="SinavGorevlendirmeDataSet.xsc">
+      <DependentUpon>SinavGorevlendirmeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SinavGorevlendirmeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SinavGorevlendirmeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SinavGorevlendirmeDataSet.xss">
+      <DependentUpon>SinavGorevlendirmeDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
